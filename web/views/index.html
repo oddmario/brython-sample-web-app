@@ -1,38 +1,38 @@
 <html>
-	<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<script type="text/javascript" src="/js/brython.js"></script>
-		<script type="text/javascript" src="/js/brython_modules.js"></script>
+        <script type="text/javascript" src="/js/brython.js"></script>
+        <script type="text/javascript" src="/js/brython_modules.js"></script>
 
-		<script type="text/python">
-		from browser import document, alert
-		from browser.html import *
+        <script type="text/python">
+            from browser import document, alert
+            from browser.html import *
 
-		# Bootstrap CSS
-		document <= LINK("", **{"rel": "stylesheet", "href": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css", "integrity": "sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l", "crossorigin": "anonymous"})
+            # Bootstrap CSS
+            document <= LINK("", **{"rel": "stylesheet", "href": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css", "integrity": "sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l", "crossorigin": "anonymous"})
 
-		document <= LINK("", **{"rel": "preconnect", "href": "https://fonts.gstatic.com"})
-		document <= LINK("", **{"rel": "stylesheet", "href": "https://fonts.googleapis.com/css2?family=Montserrat&display=swap"})
+            document <= LINK("", **{"rel": "preconnect", "href": "https://fonts.gstatic.com"})
+            document <= LINK("", **{"rel": "stylesheet", "href": "https://fonts.googleapis.com/css2?family=Montserrat&display=swap"})
 
-		document <= SCRIPT("", **{"src": "https://kit.fontawesome.com/b708dde37d.js", "crossorigin": "anonymous"})
-		document <= SCRIPT("", **{"src": "//cdn.jsdelivr.net/npm/sweetalert2@10"})
+            document <= SCRIPT("", **{"src": "https://kit.fontawesome.com/b708dde37d.js", "crossorigin": "anonymous"})
+            document <= SCRIPT("", **{"src": "//cdn.jsdelivr.net/npm/sweetalert2@10"})
 
-		document <= DIV({
-			BR(),
-			DIV({
-				DIV({
-					DIV({
-						H3("Hello {{ name }}!")
-					}, **{"class": "jumbotron"})
-				}, **{"class": "col-md-12"})
-			}, **{"class": "row"}),
-			BR()
-		}, **{"class": "container-fluid"})
+            document <= DIV({
+                BR(),
+                DIV({
+                    DIV({
+                        DIV({
+                            H3("Hello {{ name }}!")
+                        }, **{"class": "jumbotron"})
+                    }, **{"class": "col-md-12"})
+                }, **{"class": "row"}),
+                BR()
+            }, **{"class": "container-fluid"})
 
-		</script>
-	</head>
+            </script>
+        </head>
 
-	<body onload="brython()"></body>
+        <body onload="brython()"></body>
 </html>
